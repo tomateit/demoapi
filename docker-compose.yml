@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+    demoapi:
+        build: .
+        environment:
+            - SERVICE_NAME=${NAME}
+        restart: "on-failure:5"

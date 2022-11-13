@@ -1,3 +1,4 @@
 .env
 meta.txt
 .idea
+.venv
