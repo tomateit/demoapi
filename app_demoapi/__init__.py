@@ -1,9 +1,11 @@
 from flask import Flask, request
+from flask_cors import CORS
 import requests
 from functools import lru_cache
 from app_demoapi.settings import settings
 
 app = Flask(__name__)
+CORS(app)
 
 
 @lru_cache(maxsize=128)
